@@ -246,6 +246,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback, IE
         sosConfig.name = sensorConf.name.replaceAll("\\[.*\\]", "");// + "SOS-T Client";
         sosConfig.autoStart = true;
         sosConfig.sensorID = sensorConf.id;
+        sosConfig.sos.protocol = sosUrl.getProtocol();
         sosConfig.sos.remoteHost = sosUrl.getHost();
         sosConfig.sos.remotePort = sosUrl.getPort();
         sosConfig.sos.resourcePath = sosUrl.getPath();
