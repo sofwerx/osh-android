@@ -13,6 +13,9 @@ android {
   compileSdkVersion rootProject.compileSdkVersion
   buildToolsVersion rootProject.buildToolsVersion
 
+  sourceCompatibility = 1.7
+  targetCompatibility = 1.7
+
   lintOptions {
     abortOnError false
   }

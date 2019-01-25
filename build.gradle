@@ -17,6 +17,8 @@ buildscript {
 allprojects {
   group = 'org.sensorhub'
   version = version
+
+  tasks.withType(JavaCompile) { sourceCompatibility = "1.8"; targetCompatibility = "1.8" }
 }
 
 subprojects {  
